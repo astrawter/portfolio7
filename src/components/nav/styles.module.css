@@ -1,0 +1,53 @@
+nav {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.navbar {
+  composes: navbar from '../../Assets/bootstrap.min.css';
+  composes: navbar-expand-lg from '../../Assets/bootstrap.min.css';
+  composes: navbar-light from '../../Assets/bootstrap.min.css';
+  background-color: #484859;
+}
+.fluid {
+  composes: container-fluid from '../../Assets/bootstrap.min.css';
+}
+.navBrand {
+  composes: navbar-brand from '../../Assets/bootstrap.min.css';
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 1.714em;
+  color: #04ADBF!important;
+  font-weight: bold;
+}
+.brandSec {
+  font-weight: 400;
+  color: #F2E6D7;
+}
+.textRight {
+  composes: w-100 from '../../Assets/bootstrap.min.css';
+  composes: text-right from '../../Assets/bootstrap.min.css';
+}
+.navbarToggler {
+  composes: navbar-toggler from '../../Assets/bootstrap.min.css';
+}
+.toggleIcon {
+  composes: navbar-toggler-icon from '../../Assets/bootstrap.min.css';
+}
+.collapse {
+    composes: collapse from '../../Assets/bootstrap.min.css';
+    composes: navbar-collapse from '../../Assets/bootstrap.min.css';
+    composes: flex-grow-1 from '../../Assets/bootstrap.min.css';
+    composes: text-right from '../../Assets/bootstrap.min.css';
+}
+.list {
+    composes: navbar-nav from '../../Assets/bootstrap.min.css';
+    composes: ml-auto from '../../Assets/bootstrap.min.css';
+    composes: flex-nowrap from '../../Assets/bootstrap.min.css';
+}
+.navItem {
+  composes: nav-item from '../../Assets/bootstrap.min.css';
+}
+.navLink {
+  composes: nav-link from '../../Assets/bootstrap.min.css';
+  color: #F2E6D7!important;
+}

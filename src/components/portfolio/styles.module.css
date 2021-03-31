@@ -1,0 +1,61 @@
+.container {
+  composes: container from '../../Assets/bootstrap.min.css';
+}
+
+.row {
+  composes: row from '../../Assets/bootstrap.min.css';
+}
+
+.smCol {
+  composes: col-lg-12 from '../../Assets/bootstrap.min.css';
+  composes: col-md-12 from '../../Assets/bootstrap.min.css';
+  composes: col-sm-12 from '../../Assets/bootstrap.min.css';
+  composes: col-xs-12 from '../../Assets/bootstrap.min.css';
+}
+
+.xs6 {
+  composes: smCol;
+  composes: col-xs-6 from '../../Assets/bootstrap.min.css';
+}
+
+.btn {
+  composes: btn from '../../Assets/bootstrap.min.css';
+  composes: btn-primary from '../../Assets/bootstrap.min.css';
+  font-size: 18px;
+}
+
+.btn:hover {
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+}
+
+.btn:active {
+    background-color: #42B32F;
+    color: white;
+}
+
+.imgFluid {
+  composes: img-fluid from '../../Assets/bootstrap.min.css';
+}
+
+.title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
