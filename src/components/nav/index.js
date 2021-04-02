@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './styles.module.css'
 
 export default class Nav extends Component {
@@ -16,17 +17,17 @@ export default class Nav extends Component {
         <div className={styles.collapse} id="navToggle">
           <ul className={styles.list}>
             <li className={styles.navItem}>
-              <a href="#" className={styles.navLink}>Home</a>
+              <Link to="/" className={styles.navLink}>Home</Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#" className={styles.navLink}>About</a>
+              <Link to="/about" className={styles.navLink}>About</Link>
             </li>
             <li className={styles.navItem}>
-              <a href="#" className={styles.navLink}>Portfolio</a>
+              <Link to="/portfolio" className={styles.navLink}>Portfolio</Link>
             </li>
-            <li className={styles.navItem}>
-              <a href="#" className={styles.navLink}>Contact</a>
-            </li>
+            {/*<li className={styles.navItem}>
+              <Link to="/contact" className={styles.navLink}>Contact</Link>
+            </li>*/}
           </ul>
         </div>
       </nav>

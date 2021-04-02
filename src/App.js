@@ -1,18 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
-import Jumbotron from './components/jumbotron'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
 import Nav from './components/nav'
+import Jumbotron from './components/jumbotron'
+import Testimonials from './components/testimonials'
 import About from './components/about'
 import Portfolio from './components/portfolio'
+import Footer from './components/footer'
 
 function App() {
   return (
-    <div className="App">
-      <Nav></Nav>
-      <Jumbotron></Jumbotron>
-      <Portfolio></Portfolio>
-      <About></About>
-    </div>
+    <Router>
+      <Switch>
+        <div className="App">
+          <Nav></Nav>
+          <Route exact path="/">
+            <Jumbotron></Jumbotron>
+            <Testimonials></Testimonials>
+          </Route>
+          <Route exact path="/portfolio">
+            <Portfolio></Portfolio>
+          </Route>
+          <Route exact path="/about">
+            <About></About>
+          </Route>
+          <Footer></Footer>
+        </div>
+      </Switch>
+    </Router>
   );
 }
 export default App;

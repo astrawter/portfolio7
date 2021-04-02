@@ -1,0 +1,17 @@
+.container {
+  composes: container-fluid from '../../Assets/bootstrap.min.css';
+  composes: min-vh-100 from '../../Assets/bootstrap.min.css';
+  padding-top: 4em;
+}
+
+.portImg {
+  composes: img-responsive from '../../Assets/bootstrap.min.css';
+  composes: float-left from '../../Assets/bootstrap.min.css';
+  margin-right: 2em;
+}
+
+.lead {
+  composes: lead from '../../Assets/bootstrap.min.css';
+  text-align: left;
+  font-weight: 500;
+}

@@ -1,0 +1,53 @@
+.container {
+  composes: container from '../../Assets/bootstrap.min.css';
+  background-color: #F2E6D7;
+}
+
+.title
+{
+    color: #484859;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+.secondary {
+  font-weight: 700;
+  color: #04ADBF;
+}
+
+.row {
+  composes: row from '../../Assets/bootstrap.min.css';
+  composes: row-cols-2 from '../../Assets/bootstrap.min.css';
+  margin-bottom: 5em;
+}
+
+.smCol {
+  composes: col-lg-12 from '../../Assets/bootstrap.min.css';
+  composes: col-md-12 from '../../Assets/bootstrap.min.css';
+  composes: col-sm-12 from '../../Assets/bootstrap.min.css';
+  composes: col-xs-12 from '../../Assets/bootstrap.min.css';
+}
+
+.col6 {
+  composes: col-6 from '../../Assets/bootstrap.min.css';
+}
+
+.media {
+  composes: media from '../../Assets/bootstrap.min.css';
+}
+
+.centerMedia {
+  composes: align-self-center from '../../Assets/bootstrap.min.css';
+  composes: mr-3 from '../../Assets/bootstrap.min.css';
+}
+
+.mediaBody {
+  composes: media-body from '../../Assets/bootstrap.min.css';
+}
+
+.mt0 {
+  composes: mt-0 from '../../Assets/bootstrap.min.css';
+}

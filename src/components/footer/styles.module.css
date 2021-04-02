@@ -1,0 +1,42 @@
+.container {
+  composes: container-fluid from '../../Assets/bootstrap.min.css';
+  composes: mt-auto from '../../Assets/bootstrap.min.css';
+  padding-top: 2em;
+  background-color: #484859;
+}
+
+.row {
+  composes: row from '../../Assets/bootstrap.min.css';
+  composes: row-cols-2 from '../../Assets/bootstrap.min.css';
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.smCol {
+  composes: col-lg-12 from '../../Assets/bootstrap.min.css';
+  composes: col-md-12 from '../../Assets/bootstrap.min.css';
+  composes: col-sm-12 from '../../Assets/bootstrap.min.css';
+  composes: col-xs-12 from '../../Assets/bootstrap.min.css';
+  margin-bottom: 2em;
+}
+
+.col6 {
+  composes: col-6 from '../../Assets/bootstrap.min.css';
+}
+
+.h1{
+  font-size: 2em;
+  font-weight: bold;
+  color: #04ADBF;
+}
+
+.secondary {
+  font-weight: 400;
+  color: #F2E6D7;
+}
+
+.social {
+  height: 1.5em;
+  margin: 0 1%;
+  border-radius: 5px;
+}
